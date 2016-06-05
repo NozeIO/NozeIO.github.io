@@ -27,11 +27,12 @@ an email to tell us why this is crap (or not?).
 
 ### Status
 
+- *Not for production*. Consider the version numbers.
+
 - We chose the traditional Swift approach:
   Make something barely usable, though demoable,
   and release it with a 2.0 version tag.
   Then hope that the community kicks in and fills open spots.
-  Well kinda. It's pretty good already! 😉
 
 - It already has
   [leftpad](https://github.com/NozeIO/Noze.io/tree/develop/Sources/leftpad).
