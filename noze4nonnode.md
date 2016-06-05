@@ -125,3 +125,10 @@ You get the idea. The `|` operators is just an alias for `src.pipe(target)`. The
 pipe listens for `readable` events on the source and writes the read data to the
 target. If the target gets full, the source is paused and an `drain` event
 handler is installed. Thus removing back pressure. Etc.
+
+Note: In Noze.io you can also pipe from regular Swift sequences, like arrays.
+Example:
+
+    "Hello World!" | spawn("wc", "-l")
+
+Should print 3 :-)

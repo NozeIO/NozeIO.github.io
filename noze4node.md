@@ -37,6 +37,8 @@ It is, however, not exactly the same. A few key differences:
   pipe it through `utf8` or `readlines` (e.g. `stdin | readlines`).
 - Noze.io overloads the pipe `|` operator (this is the only one), it is the
   same like the `.pipe()` method (which is also available).
+- In Noze.io you can directly pipe from sequences into streams, like:
+  `allFetchedRecords | record2html | response`
 
 ### Examples
   
