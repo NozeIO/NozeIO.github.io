@@ -6,7 +6,7 @@
 name: Noze.io
 
 # Short bio or description (displayed in the header)
-description: The Noze Consortium
+description: Evented I/O streams for Swift
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://pbs.twimg.com/profile_images/725354235056017409/poiNAOlB.jpg
@@ -23,7 +23,7 @@ footer-links:
   email: info@noze.io
   facebook:
   flickr:
-  github: NozeIO
+  github: NozeIO/Noze.io
   instagram:
   linkedin:
   pinterest:

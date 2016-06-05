@@ -1,9 +1,80 @@
 ---
 layout: default
 ---
+<p style="text-align: justify;">
+  <b>Noze.io</b> is an attempt to carry over the
+  <a href="http://nodejs.org/" target="ext">Node.js</a>
+  ideas into <em>pure</em>
+  <a href="http://swift.org/" target="ext">Swift</a>.
+  It uses
+  <a href="https://github.com/apple/swift-corelibs-libdispatch" target="ext"
+    >libdispatch</a>
+  for event-driven, non-blocking I/O.
+  <b>Noze.io</b> is built around type-safe back-pressure aware pull-streams
+  (using Swift generics)
+  operating on batches of items. Instead of just operating on bytes,
+  operate on batches of Unicode lines or database records or HTML
+  responses or - you get the idea.
+  Be efficient: Stream everything and ßatch.
+</p>
+<p style="text-align: justify;">
+  A focus is to keep the API similar to Node. Not always possible -
+  Swift is not JavaScript - but pretty close.
+  It comes with rechargeables included, <b>Noze.io</b> is self-contained and
+  doesn't require any extra dependencies.
+</p>
+<p style="text-align: justify;">
+  <b>Noze.io</b> works in Cocoa environments as well as on Linux,
+  and it works with Swift 2.2 as well as the latest Swift 3 drop.
+  In fact we suggest 2.2 until Swift 3 is actually released.
+</p>
+<p style="text-align: justify;">
+  <em>Is it a good idea?</em> You <a href="/about/">tell us</a>.
+  Not sure, but we think it might be,
+  because:
+  <em>a)</em>
+  While Swift looks <em>very</em> much like JavaScript, it is actually a very
+  high performance statically typed and AOT-compiled language,
+  <em>b)</em>
+  Code often looks better in Swift, mostly due to trailing-closure syntax,
+  <em>c)</em>
+  No monkey patching while still providing extensions.
+  <strike>There are cons too.</strike>
+</p>
+
+<h4>Shows us some code!</h4>
+<p>
+  There is a reasonably large collection of simple, focused:
+  <a href="https://github.com/NozeIO/Noze.io/tree/master/Samples"
+     >Noze.io examples</a>. But here you go, the "standard" Node example, a
+  HelloWorld httpd:</p>
+<pre class="code highlight">
+import http
+
+http.createServer { req, res in 
+    res.writeHead(200, [ "Content-Type": "text/html" ])
+    res.end("&lt;h1&gt;Hello World&lt;/h1&gt;")
+  }
+  .listen(1337)
+</pre>
+<p>An echo daemon, just piping the in-end of a socket into its own-out end:</p>
+<pre class="code highlight">
+import net
+
+net.createServer { sock in
+    sock.write("Welcome to Noze.io!\r\n")
+    sock | sock
+  }
+  .listen(1337)
+</pre>
 
 <p>
-  Intro: this and that.
+  More complex stuff including (like Todo-MVC) can be found in the
+  <a href="https://github.com/NozeIO/Noze.io/tree/master/Samples"
+     >Noze.io examples</a>.
+  Like what you see? Head over to our
+  <a href="/start/">Start page</a>
+  to get started.
 </p>
 
 <div class="posts">
