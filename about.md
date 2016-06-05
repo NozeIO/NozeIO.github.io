@@ -49,6 +49,19 @@ an email to tell us why this is crap (or not?).
   environment is going to grow as well.
 
 - There are tons of open ends in Noze.io. We welcome contributions of all kinds.
+  Grep the code for FIXME and TODO.
+  
+### Want to help?
+
+Nice, we need lotz of help. Ideas:
+
+- There are tons of Node tutorials, redo such for Noze.io. Or well, first check 
+  whether they work in Noze.io in the first place and what is missing!
+  - Node.js to Noze.io conversion guides
+- There are a lot of node modules, many are really easy to implement. Same for
+  core Node API, we miss quite a lot of that (`os` module and such).
+- Write tests.
+- Do some benchmarking with Apache Bench
 
 ### Who
 
