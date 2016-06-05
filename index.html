@@ -12,8 +12,8 @@ layout: default
   for event-driven, non-blocking I/O.
   <b>Noze.io</b> is built around type-safe back-pressure aware pull-streams
   (using Swift generics)
-  operating on batches of items. Instead of just operating on bytes,
-  operate on batches of Unicode lines or database records or HTML
+  operating on batches of items. Instead of working with just bytes,
+  deal with batches of Unicode lines or database records or HTML
   responses or - you get the idea.
   Be efficient: Stream everything and ßatch.
 </p>
@@ -38,10 +38,10 @@ layout: default
   Not sure, but we think it might be,
   because:
   <em>a)</em>
-  While Swift looks <em>very</em> much like JavaScript, it is actually a very
-  high performance statically typed and AOT-compiled language,
+  While Swift looks like JavaScript, it is actually a very
+  high performance, statically typed and AOT-compiled language,
   <em>b)</em>
-  Code often looks better in Swift, mostly due to trailing-closure syntax,
+  Code often looks better in Swift, mostly due to the trailing-closure syntax,
   <em>c)</em>
   No monkey patching while still providing extensions.
   <strike>There are cons too.</strike>
@@ -62,7 +62,7 @@ http.createServer { req, res in
   }
   .listen(1337)
 </code></pre></div>
-<p>An echo daemon, just piping the in-end of a socket into its own-out end:</p>
+<p>An echo daemon, just piping the in-end of a socket into its own out-end:</p>
 <div class="highlighter-rouge">
 <pre class="code highlight"><code>import net
 
