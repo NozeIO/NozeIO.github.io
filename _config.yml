@@ -9,7 +9,7 @@ name: Noze.io
 description: Evented I/O streams for Swift
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://pbs.twimg.com/profile_images/725354235056017409/poiNAOlB.jpg
+avatar: /images/noze-128x128.png
 
 timezone: Europe/Berlin
 
