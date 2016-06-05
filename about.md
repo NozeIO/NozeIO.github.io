@@ -22,7 +22,7 @@ Hey, we love feedback. Join the mailing list, Slack channel or just drop us
 an email to tell us why this is crap (or not?).
 
 - [Mailing List](https://groups.google.com/forum/#!forum/nozeio)
-- [Slack](https://nozeio.slack.com)
+- [Slack](http://slack.noze.io)
 - [info@noze.io](mailto:info@noze.io)
 
 ### Status
@@ -62,6 +62,9 @@ Nice, we need lotz of help. Ideas:
   core Node API, we miss quite a lot of that (`os` module and such).
 - Write tests.
 - Do some benchmarking with Apache Bench
+- Packages
+  - brew
+  - Ubuntu apt package
 
 ### Who
 
