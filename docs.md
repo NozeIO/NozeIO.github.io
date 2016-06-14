@@ -12,7 +12,7 @@ Pages on this site:
 
 - [Start page](/start)
 - Step by Step: Create your own httpd
-  - [Using Xcode and Swift 2.2](/docs/create-own-httpd-xcode-s2/)
+  - [Using Xcode and Swift 2.2](/docs/create-own-httpd-xcode-s2)
 - [Noze.io for Node people](/noze4node)
 - [Noze.io for non-Node people](/noze4nonnode)
 - [Install Swift](/install-swift)
