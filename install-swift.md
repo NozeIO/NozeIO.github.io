@@ -49,15 +49,17 @@ on MacOS this is included in all builds.
 
 ### MacOS or Ubuntu with Swift 3-drop
 
-    swiftenv install SWIFT_SNAPSHOT_NAME=DEVELOPMENT-SNAPSHOT-2016-05-31-a
+    swiftenv install SWIFT_SNAPSHOT_NAME=DEVELOPMENT-SNAPSHOT-2016-06-06-a
 
 ## Linux: Install libdispatch
 
 This can be a little messy as there is no final release of `libdispatch` for
 Linux. It seems to work fine for me nevertheless.
 
+Update: 2016-06-15: GCD master b0rked, updated to use use a 'working' branch.
+
 1. Make sure you have Swift installed (can you run `swift`?).
-2. Grab [libdispatch from GitHub](https://github.com/apple/swift-corelibs-libdispatch)
+2. Grab [libdispatch from GitHub](https://github.com/helje5/swift-corelibs-libdispatch.git)
 3. Install prerequisites
 3. Configure, patch, compile and install it.
 4. Make sure it works.
@@ -73,7 +75,7 @@ Steps:
        systemtap-sdt-dev \
        libbsd-dev libbsd0 libbsd0-dbg
     
-    git clone --recursive https://github.com/apple/swift-corelibs-libdispatch.git
+    git clone --recursive https://github.com/helje5/swift-corelibs-libdispatch.git
     cd swift-corelibs-libdispatch
     
     TT_SWIFT_BINARY=`swiftenv which swift`
