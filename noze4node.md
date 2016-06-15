@@ -23,6 +23,8 @@ It is, however, not exactly the same. A few key differences:
   - you can't rename them (ala `let blub = require('blob')`)
   - they do not carry resources
   - they have no `__dirname`
+  - you cannot `require` arbitrary JSON files (read them via 
+    `jsonfile.readFile` etc.)
 - Get used to trailing closures, just attach a block to an event 
   (`stream.onReadable { ... }`, not `stream.on('readable', function() { })`)
 - Noze.io only implements Node v3 streams, that is: the `readable` event and
