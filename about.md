@@ -9,12 +9,12 @@ permalink: /about/
 To get started, jump over to our [Start](/start/) page.
 
     import net
-
+    
     net.createServer { sock in
-        sock.write("Welcome to Noze.io!\r\n")
-        sock | sock
-      }
-      .listen(1337)
+      sock.write("Welcome to Noze.io!\r\n")
+      sock | sock
+    }
+    .listen(1337)
 
 ### Contact
 

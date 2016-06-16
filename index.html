@@ -3,10 +3,10 @@ layout: default
 ---
 
 <p>
-  <img src="https://img.shields.io/badge/Swift-2.2%2C%203.0-blue.svg" />
-  <img src="https://img.shields.io/badge/os-Mac%20OS%20X-green.svg?style=flat" />
+  <img src="https://img.shields.io/badge/swift-2+3-blue.svg" />
+  <img src="https://img.shields.io/badge/os-macOS-green.svg?style=flat" />
   <img src="https://img.shields.io/badge/os-iOS-green.svg?style=flat"   />
-  <img src="https://img.shields.io/badge/os-Linux-green.svg?style=flat" />
+  <img src="https://img.shields.io/badge/os-tuxOS-green.svg?style=flat" />
   <img src="https://api.travis-ci.org/NozeIO/Noze.io.svg?branch=master&style=flat" />
 </p>
 
@@ -31,6 +31,7 @@ layout: default
   Swift is not JavaScript - but pretty close.
   It comes with rechargeables included, <b>Noze.io</b> is self-contained and
   doesn't require any extra dependencies.
+  No extra C modules, <em>pure</em> Swift.
 </p>
 <p style="text-align: justify;">
   <b>Noze.io</b> works in Cocoa environments as well as on Linux,
@@ -66,20 +67,20 @@ layout: default
 <pre class="code highlight"><code>import http
 
 http.createServer { req, res in 
-    res.writeHead(200, [ "Content-Type": "text/html" ])
-    res.end("&lt;h1&gt;Hello World&lt;/h1&gt;")
-  }
-  .listen(1337)
+  res.writeHead(200, [ "Content-Type": "text/html" ])
+  res.end("&lt;h1&gt;Hello World&lt;/h1&gt;")
+}
+.listen(1337)
 </code></pre></div>
 <p>An echo daemon, just piping the in-end of a socket into its own out-end:</p>
 <div class="highlighter-rouge">
 <pre class="code highlight"><code>import net
 
 net.createServer { sock in
-    sock.write("Welcome to Noze.io!\r\n")
-    sock | sock
-  }
-  .listen(1337)
+  sock.write("Welcome to Noze.io!\r\n")
+  sock | sock
+}
+.listen(1337)
 </code></pre></div>
 
 <p style="text-align: justify;">
