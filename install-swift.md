@@ -6,9 +6,9 @@ permalink: /install-swift/
 
 You have the choice between:
 
-- MacOS and Ubuntu (14.04 or 15.10)
-- Swift 2.2 and the latest Swift 3 drop.
-- On MacOS between using Xcode or some plain editor (Emacs, vi, TextMate, etc).
+- macOS and Ubuntu (14.04 or 15.10)
+- Swift 2.2 and the latest Swift 3 preview
+- On macOS between using Xcode or some plain editor (Emacs, vi, TextMate, etc)
 
 If you have a Mac, the easiest is plain [Xcode](#xcode) with Swift 2.2.
 
@@ -23,7 +23,7 @@ Need Xcode? Available for free at
 
 Once you got it, head over to [Download Noze.io](/start/#download-nozeio).
 
-## Linux or MacOS "Unix-style"
+## Linux or macOS "Unix-style"
 
 [A manual tarball install of Swift](https://swift.org/download/#releases)
 is just fine,
@@ -37,7 +37,7 @@ Swiftenv [installation steps](https://github.com/kylef/swiftenv#installation):
 
 **Important**: On Linux you also need to install
 [libdispatch](#linux-install-libdispatch),
-on MacOS this is included in all builds.
+on macOS this is included in all builds.
 
 ### Ubuntu 14.04 with Swift 2.2.1
 
@@ -47,25 +47,37 @@ on MacOS this is included in all builds.
 
     swiftenv install https://swift.org/builds/swift-2.2.1-release/ubuntu1510/swift-2.2.1-RELEASE/swift-2.2.1-RELEASE-ubuntu15.10.tar.gz
 
-### MacOS or Ubuntu with Swift 3-drop
+### Ubuntu with Swift 3 Preview 1
 
-    swiftenv install SWIFT_SNAPSHOT_NAME=DEVELOPMENT-SNAPSHOT-2016-06-06-a
+    swiftenv install SWIFT_SNAPSHOT_NAME=swift-3.0-preview-1
+
+### macOS with Swift 3 Preview 1
+
+Install an Xcode 8 beta, available for free at
+[developer.apple.com](https://developer.apple.com/xcode/download/).
+
+Note: This drop uses the 'objectified' libdispatch API.
 
 ## Linux: Install libdispatch
 
 This can be a little messy as there is no final release of `libdispatch` for
 Linux. It seems to work fine for me nevertheless.
 
-Update: 2016-06-15: GCD master b0rked, updated to use use a 'working' branch.
+Update: 2016-07-04:
+For Swift 2.2.1 use our
+[libdispatch snapshot](https://github.com/helje5/swift-corelibs-libdispatch.git).
+For Swift 3preview1 use the `experimental/foundation` branch.
+This: `02da60f1d26bd6f97b4ffd5053aa057aee700978` version is used on Travis and
+seems to work fine.
 
 1. Make sure you have Swift installed (can you run `swift`?).
-2. Grab [libdispatch from GitHub](https://github.com/helje5/swift-corelibs-libdispatch.git)
+2. Grab libdispatch
 3. Install prerequisites
 3. Configure, patch, compile and install it.
 4. Make sure it works.
 
-Steps:
-    
+Install dependencies:
+
     sudo apt-get install -y \
        clang make git libicu52 \
        autoconf libtool pkg-config \
@@ -74,10 +86,22 @@ Steps:
        libpthread-workqueue-dev \
        systemtap-sdt-dev \
        libbsd-dev libbsd0 libbsd0-dbg
-    
+
+Swift 2.2.1:
+
     git clone --recursive https://github.com/helje5/swift-corelibs-libdispatch.git
     cd swift-corelibs-libdispatch
-    
+
+Swift 3 Preview 1:
+
+    git clone https://github.com/apple/swift-corelibs-libdispatch.git
+    cd swift-corelibs-libdispatch
+    git checkout 02da60f1d26bd6f97b4ffd5053aa057aee700978
+    git submodule init
+    git submodule update
+
+Build:
+  
     TT_SWIFT_BINARY=`swiftenv which swift`
     TT_SNAP_DIR=`echo $TT_SWIFT_BINARY | sed "s|/usr/bin/swift||g"`
     

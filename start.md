@@ -9,7 +9,7 @@ permalink: /start/
 To get started with Noze.io we recommend
 
 - that you get a [Swift installation](/install-swift)
-  on either MacOS or Ubuntu
+  on either macOS or Ubuntu
 - that you [download](#download-nozeio) the Noze.io sources,
 - and that you look at the [examples](#examples).
 - You might also want to skim over some [documentation](#documentation).
