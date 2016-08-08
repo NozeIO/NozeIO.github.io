@@ -47,11 +47,11 @@ on macOS this is included in all builds.
 
     swiftenv install https://swift.org/builds/swift-2.2.1-release/ubuntu1510/swift-2.2.1-RELEASE/swift-2.2.1-RELEASE-ubuntu15.10.tar.gz
 
-### Ubuntu with Swift 3 Preview 1
+### Ubuntu with Swift 3 Preview 4
 
     swiftenv install SWIFT_SNAPSHOT_NAME=swift-3.0-preview-1
 
-### macOS with Swift 3 Preview 1
+### macOS with Swift 3 Preview 2
 
 Install an Xcode 8 beta, available for free at
 [developer.apple.com](https://developer.apple.com/xcode/download/).
@@ -66,7 +66,7 @@ Linux. It seems to work fine for me nevertheless.
 Update: 2016-07-04:
 For Swift 2.2.1 use our
 [libdispatch snapshot](https://github.com/helje5/swift-corelibs-libdispatch.git).
-For Swift 3preview1 use the `experimental/foundation` branch.
+For Swift 3preview4 use the `experimental/foundation` branch.
 This: `02da60f1d26bd6f97b4ffd5053aa057aee700978` version is used on Travis and
 seems to work fine.
 
@@ -92,7 +92,7 @@ Swift 2.2.1:
     git clone --recursive https://github.com/helje5/swift-corelibs-libdispatch.git
     cd swift-corelibs-libdispatch
 
-Swift 3 Preview 1:
+Swift 3 Preview 4:
 
     git clone https://github.com/apple/swift-corelibs-libdispatch.git
     cd swift-corelibs-libdispatch
@@ -106,15 +106,25 @@ Build:
     TT_SNAP_DIR=`echo $TT_SWIFT_BINARY | sed "s|/usr/bin/swift||g"`
     
     export CC=clang
+    export LD=ld.gold
     ./autogen.sh
     ./configure --with-swift-toolchain=${TT_SNAP_DIR}/usr \
                 --prefix=${TT_SNAP_DIR}/usr
     make all
 
-If the `make all` fails with errors, try this:
+*Swift 2.2.1*: If the `make all` fails with errors, try this:
 
     wget https://raw.githubusercontent.com/NozeIO/Noze.io/master/xcconfig/dispatch.h-patched-swift3
     cp dispatch.h-patched-swift3 dispatch/dispatch.h
+
+*Swift 3 Preview 4*: If the `make all` crashes `ld` (the linker aborts), you may
+need to explicitly link with `ld.gold`.
+Sometimes the linker setting doesn't seem to be picked up properly.
+This does it for me on Trusty:
+
+    pushd /usr/bin
+    sudo ln -sf ld.gold ld
+    popd
 
 Still doesn't compile? [Ask for help](/about/#contact) on Slack or mailinglist!
 
