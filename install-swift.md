@@ -7,10 +7,10 @@ permalink: /install-swift/
 You have the choice between:
 
 - macOS and Ubuntu (14.04 or 15.10)
-- Swift 2.2 and the latest Swift 3 preview
+- Swift 2.2/2.3 and the latest Swift 3 preview
 - On macOS between using Xcode or some plain editor (Emacs, vi, TextMate, etc)
 
-If you have a Mac, the easiest is plain [Xcode](#xcode) with Swift 2.2.
+If you have a Mac, the easiest is plain [Xcode](#xcode) with Swift 2.2/2.3.
 
 If you live on Linux, Swift 2.2 is more stable than 3. On Linux remember to
 install [libdispatch](#linux-install-libdispatch)!
@@ -49,7 +49,7 @@ on macOS this is included in all builds.
 
 ### Ubuntu with Swift 3 Preview 4
 
-    swiftenv install SWIFT_SNAPSHOT_NAME=swift-3.0-preview-1
+    swiftenv install https://swift.org/builds/swift-3.0-preview-4/ubuntu1404/swift-3.0-PREVIEW-4/swift-3.0-PREVIEW-4-ubuntu14.04.tar.gz
 
 ### macOS with Swift 3 Preview 2
 
