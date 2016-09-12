@@ -28,20 +28,14 @@ an email to tell us why this is crap (or not?).
 
 ### Supported Swift Versions
 
+| OS    | Swift | Xcode                                                      | Make | SPM  |
+| ----- | ----- | ---------------------------------------------------------- | ---- | ---- |
+| macOS | 3GMc1 | [8 GMc1](https://developer.apple.com/xcode/download/)      | 👍🏻  | 👍  |
+| tuxOS | 3GMc1 |                                                            | 👍🏻  | 👍  |
 
-| OS    | Swift | GCD     | Xcode                                                      | Make | SPM  |
-| ----- | ----- | ------- | ---------------------------------------------------------- | ---- | ---- |
-| macOS | 2.2.1 | builtin | [7.3.1](https://developer.apple.com/xcode/download/)       | 👍🏻  | 👎  |
-| macOS | 2.3   | builtin | [8.0b](https://developer.apple.com/xcode/download/)        | 👍🏻  | 👎  |
-| macOS | 3p4   | Objective-GCD | [8.0b](https://developer.apple.com/xcode/download/)        | 👍🏻  | 👍  |
-| tuxOS | 2.2.1 | [snapshot](https://github.com/helje5/swift-corelibs-libdispatch) |  | 👍🏻  | 👎  |
-| tuxOS | 3p4   | [upstream](https://github.com/apple/swift-corelibs-libdispatch/tree/experimental/foundation) |  | 👍🏻  | 👍  |
-
-Noze.io supports Swift 2.2.1 in addition to the Swift 3 'preview 4'.
-Swift 2.2.1 is still the only stable Swift version.
-Supporting both makes some code in Noze ugly, but it is still required to make 
-the usage of Noze.io smooth. Always found it a pain to use Swift 3 projects ...
-(as you carefully need to select specific Swift 3 dumps as well as GCD).
+P.S.: With the release of Swift 3 Noze.io drops support for Swift 2.x. If you
+are still interested in using it with 2.x, the last release is still available
+in the `legacy/swift23` branch on GitHub.
 
 
 ### Status
