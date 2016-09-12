@@ -33,10 +33,12 @@ Swiftenv [installation steps](https://github.com/kylef/swiftenv#installation):
 
 ### Ubuntu 14.04 with Swift 3 GMc 1
 
+    sudo apt-get install libcurl4-openssl-dev
     swiftenv install https://swift.org/builds/swift-3.0-GM-CANDIDATE/ubuntu1404/swift-3.0-GM-CANDIDATE/swift-3.0-GM-CANDIDATE-ubuntu14.04.tar.gz
 
 ### Ubuntu 15.10 with Swift 3 GMc 1
 
+    sudo apt-get install libcurl4-openssl-dev
     swiftenv install https://swift.org/builds/swift-3.0-GM-CANDIDATE/ubuntu1510/swift-3.0-GM-CANDIDATE/swift-3.0-GM-CANDIDATE-ubuntu15.10.tar.gz
 
 ### macOS with Swift 3 GMc 1
