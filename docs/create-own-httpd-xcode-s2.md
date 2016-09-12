@@ -1,8 +1,11 @@
 ---
 layout: page
-title:  Step-by-step httpd using Xcode / Swift 2.2
+title:  Step-by-step httpd using Xcode 7 / Swift 2.2
 permalink: /docs/create-own-httpd-xcode-s2
 ---
+
+*Note*: This needs an update for Xcode 8 / Swift 3. Swift 2.3 is not supported
+        anymore.
 
 Step-by-step guide to create a new Cocoa Xcode application project which
 contains an Hello-World httpd server implemented using

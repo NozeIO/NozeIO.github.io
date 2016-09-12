@@ -50,7 +50,6 @@ Make sure it works, if the thing below doesn't, Noze.io won't work either:
 
     swift
     import Dispatch
-    import Dispatch
     let Q = DispatchQueue.global()
     Q.async { print("Hello!"); }
     import Glibc
