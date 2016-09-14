@@ -31,17 +31,17 @@ Swiftenv [installation steps](https://github.com/kylef/swiftenv#installation):
     echo 'export PATH="$SWIFTENV_ROOT/bin:$PATH"' >> ~/.bash_profile
     echo 'eval "$(swiftenv init -)"' >> ~/.bash_profile
 
-### Ubuntu 14.04 with Swift 3 GMc 1
+### Ubuntu 14.04 with Swift 3
 
     sudo apt-get install libcurl4-openssl-dev
-    swiftenv install https://swift.org/builds/swift-3.0-GM-CANDIDATE/ubuntu1404/swift-3.0-GM-CANDIDATE/swift-3.0-GM-CANDIDATE-ubuntu14.04.tar.gz
+    swiftenv install https://swift.org/builds/swift-3.0-release/ubuntu1404/swift-3.0-RELEASE/swift-3.0-RELEASE-ubuntu14.04.tar.gz
 
-### Ubuntu 15.10 with Swift 3 GMc 1
+### Ubuntu 15.10 with Swift 3
 
     sudo apt-get install libcurl4-openssl-dev
-    swiftenv install https://swift.org/builds/swift-3.0-GM-CANDIDATE/ubuntu1510/swift-3.0-GM-CANDIDATE/swift-3.0-GM-CANDIDATE-ubuntu15.10.tar.gz
+    swiftenv install https://swift.org/builds/swift-3.0-release/ubuntu1510/swift-3.0-RELEASE/swift-3.0-RELEASE-ubuntu15.10.tar.gz
 
-### macOS with Swift 3 GMc 1
+### macOS with Swift 3
 
 Install Xcode 8, available for free at
 [developer.apple.com](https://developer.apple.com/xcode/download/).
