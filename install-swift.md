@@ -7,17 +7,18 @@ permalink: /install-swift/
 You have the choice between:
 
 - macOS and Ubuntu (14.04 or 15.10)
-- Swift 2.2/2.3 and the latest Swift 3 preview
+- Swift 2.2/2.3 and Swift 3.0
 - On macOS between using Xcode or some plain editor (Emacs, vi, TextMate, etc)
 
-If you have a Mac, the easiest is plain [Xcode](#xcode) with Swift 2.2/2.3.
+If you have a Mac, the easiest is plain [Xcode](#xcode) with Swift 3.0/Xcode 8.
 
 If you live on Linux, Swift 2.2 is more stable than 3. On Linux remember to
-install [libdispatch](#linux-install-libdispatch)!
+install [libdispatch](#linux-install-libdispatch) if you are using a release
+before Swift 3.0 (Swift 3.0 comes with libdispatch included)!
 
 ## Xcode
 
-Already have Xcode 7.3 installed? Make sure it is up to date.
+Already have Xcode 8 installed? Make sure it is up to date.
 Need Xcode? Available for free at
 [developer.apple.com](https://developer.apple.com/xcode/download/).
 
@@ -35,9 +36,9 @@ Swiftenv [installation steps](https://github.com/kylef/swiftenv#installation):
     echo 'export PATH="$SWIFTENV_ROOT/bin:$PATH"' >> ~/.bash_profile
     echo 'eval "$(swiftenv init -)"' >> ~/.bash_profile
 
-**Important**: On Linux you also need to install
-[libdispatch](#linux-install-libdispatch),
-on macOS this is included in all builds.
+*Important*: On Linux you also need to install
+[libdispatch](#linux-install-libdispatch) when using a Swift drop prior
+the Swift 3.0 final, on macOS this is included in all builds.
 
 ### Ubuntu 14.04 with Swift 2.2.1
 
@@ -51,14 +52,21 @@ on macOS this is included in all builds.
 
     swiftenv install https://swift.org/builds/swift-3.0-preview-4/ubuntu1404/swift-3.0-PREVIEW-4/swift-3.0-PREVIEW-4-ubuntu14.04.tar.gz
 
-### macOS with Swift 3 Preview 2
+### Ubuntu 15.10 with Swift 3.0
 
-Install an Xcode 8 beta, available for free at
+    sudo apt-get install libcurl4-openssl-dev
+    swiftenv install 3.0
+
+### macOS with Swift 3.0
+
+Install Xcode 8, available for free at
 [developer.apple.com](https://developer.apple.com/xcode/download/).
 
 Note: This drop uses the 'objectified' libdispatch API.
 
 ## Linux: Install libdispatch
+
+NOTE: Not required with the Swift 3.0 final release on Linux.
 
 This can be a little messy as there is no final release of `libdispatch` for
 Linux. It seems to work fine for me nevertheless.
