@@ -28,15 +28,14 @@ an email to tell us why this is crap (or not?).
 
 ### Supported Swift Versions
 
-| OS    | Swift | Branch  | GCD     | Xcode                                                      | Make | SPM  |
-| ----- | ----- | ------- | ------- | ---------------------------------------------------------- | ---- | ---- |
-| macOS | 2.2.1 | master  | builtin | [7.3.1](https://developer.apple.com/xcode/download/)       | 👍🏻  | 👎  |
-| macOS | 2.3   | master  | builtin | [8.0b](https://developer.apple.com/xcode/download/)        | 👍🏻  | 👎  |
-| macOS | 3p4   | master  | Objective-GCD | [8.0b](https://developer.apple.com/xcode/download/)        | 👍🏻  | 👍  |
-| tuxOS | 2.2.1 | master  | [snapshot](https://github.com/helje5/swift-corelibs-libdispatch) |  | 👍🏻  | 👎  |
-| tuxOS | 3p4   | master  | [upstream](https://github.com/apple/swift-corelibs-libdispatch/tree/experimental/foundation) |  | 👍🏻  | 👍  |
-| macOS | 3.0   | develop | Objective-GCD | [Xcode 8](https://developer.apple.com/xcode/download/)        | 👍🏻  | 👍  |
-| tuxOS | 3.0   | develop | Objective-GCD |                                                            | 👍🏻  | 👍  |
+| OS    | Swift    | Branch   | GCD      | Xcode / Swift                                              | Make | SPM  |
+| ----- | -------- | ---------| -------- | ---------------------------------------------------------- | ---- | ---- |
+| macOS | 3.0.0    | master   | builtin  | [Xcode 8](https://developer.apple.com/xcode/download/)     | 👍🏻  | 👍  |
+| tuxOS | 3.0.1pr2 | master   | builtin  | [Swift 3.0.1 Preview 2](https://swift.org/download/#previews) | 👍🏻  | 👍  |
+| macOS | 3.0.1pr2 | -        | builtin  | Xcode 8.1 beta 2                                           | 👎🏻  | 👎  |
+| tuxOS | 3.0.0    | -        | builtin  |                                                            | 👎🏻  | 👎  |
+| macOS | 2.3      | swift23  | builtin  | [Xcode 8](https://developer.apple.com/xcode/download/)     | 👍🏻  | 👎  |
+| tuxOS | 2.2.1    | swift23  | [snapshot](https://github.com/helje5/swift-corelibs-libdispatch) |    | 👍🏻  | 👎  |
 
 There are Noze.io branches which support Swift 2.2.1. But with the release
 of Swift 3.0 Noze.io is switching over to 3.0 only.

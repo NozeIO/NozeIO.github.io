@@ -13,6 +13,7 @@ Pages on this site:
 - [Start page](/start)
 - Step by Step: Create your own httpd
   - [Using Xcode and Swift 2.2](/docs/create-own-httpd-xcode-s2)
+    - should be pretty much the same for Xcode 8 + Swift 3.0.0
 - [Noze.io for Node people](/noze4node)
 - [Noze.io for non-Node people](/noze4nonnode)
 - [Install Swift](/install-swift)
