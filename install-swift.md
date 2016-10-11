@@ -31,15 +31,20 @@ Swiftenv [installation steps](https://github.com/kylef/swiftenv#installation):
     echo 'export PATH="$SWIFTENV_ROOT/bin:$PATH"' >> ~/.bash_profile
     echo 'eval "$(swiftenv init -)"' >> ~/.bash_profile
 
-### Ubuntu 14.04 with Swift 3
+### Ubuntu 14.04 with Swift 3.0.1 Preview 2
 
     sudo apt-get install libcurl4-openssl-dev
-    swiftenv install https://swift.org/builds/swift-3.0-release/ubuntu1404/swift-3.0-RELEASE/swift-3.0-RELEASE-ubuntu14.04.tar.gz
+    swiftenv install https://swift.org/builds/swift-3.0.1-preview-2/ubuntu1404/swift-3.0.1-PREVIEW-2/swift-3.0.1-PREVIEW-2-ubuntu14.04.tar.gz
 
-### Ubuntu 15.10 with Swift 3
+### Ubuntu 15.10 with Swift 3.0.1 Preview 2
 
     sudo apt-get install libcurl4-openssl-dev
-    swiftenv install https://swift.org/builds/swift-3.0-release/ubuntu1510/swift-3.0-RELEASE/swift-3.0-RELEASE-ubuntu15.10.tar.gz
+    swiftenv install https://swift.org/builds/swift-3.0.1-preview-2/ubuntu1510/swift-3.0.1-PREVIEW-2/swift-3.0.1-PREVIEW-2-ubuntu15.10.tar.gz
+
+### Ubuntu 16.04 with Swift 3.0.1 Preview 2
+
+    sudo apt-get install libcurl4-openssl-dev
+    swiftenv install https://swift.org/builds/swift-3.0.1-preview-2/ubuntu1604/swift-3.0.1-PREVIEW-2/swift-3.0.1-PREVIEW-2-ubuntu16.04.tar.gz
 
 ### macOS with Swift 3
 
