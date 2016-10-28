@@ -30,15 +30,15 @@ an email to tell us why this is crap (or not?).
 
 | OS    | Swift    | Branch   | GCD      | Xcode / Swift                                              | Make | SPM  |
 | ----- | -------- | ---------| -------- | ---------------------------------------------------------- | ---- | ---- |
-| macOS | 3.0.0    | master   | builtin  | [Xcode 8](https://developer.apple.com/xcode/download/)     | 👍🏻  | 👍  |
-| tuxOS | 3.0.1pr2 | master   | builtin  | [Swift 3.0.1 Preview 2](https://swift.org/download/#previews) | 👍🏻  | 👍  |
-| macOS | 3.0.1pr2 | -        | builtin  | Xcode 8.1 beta 2                                           | 👎🏻  | 👎  |
+| macOS | 3.0.1    | master   | builtin  | [Xcode 8](https://developer.apple.com/xcode/download/)     | 👍🏻  | 👍  |
+| tuxOS | 3.0.1GMc | master   | builtin  | [Swift 3.0.1 Preview 2](https://swift.org/download/#previews) | 👍🏻  | 👍  |
+| macOS | 3.0.0    | master   | builtin  | Xcode 8                                                    | 👍🏻  | 👍  |
 | tuxOS | 3.0.0    | -        | builtin  |                                                            | 👎🏻  | 👎  |
 | macOS | 2.3      | swift23  | builtin  | [Xcode 8](https://developer.apple.com/xcode/download/)     | 👍🏻  | 👎  |
 | tuxOS | 2.2.1    | swift23  | [snapshot](https://github.com/helje5/swift-corelibs-libdispatch) |    | 👍🏻  | 👎  |
 
-There are Noze.io branches which support Swift 2.2.1. But with the release
-of Swift 3.0 Noze.io is switching over to 3.0 only.
+Noze.io has switched over to use Swift 3.0.1. A Swift 2.x branch is still
+available to support the lots of existing production deployments.
 
 
 ### Status
