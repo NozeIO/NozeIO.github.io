@@ -31,7 +31,7 @@ an email to tell us why this is crap (or not?).
 | OS    | Swift    | Branch   | GCD      | Xcode / Swift                                              | Make | SPM  |
 | ----- | -------- | ---------| -------- | ---------------------------------------------------------- | ---- | ---- |
 | macOS | 3.0.1    | master   | builtin  | [Xcode 8](https://developer.apple.com/xcode/download/)     | 👍🏻  | 👍  |
-| tuxOS | 3.0.1GMc | master   | builtin  | [Swift 3.0.1 Preview 2](https://swift.org/download/#previews) | 👍🏻  | 👍  |
+| tuxOS | 3.0.1    | master   | builtin  | [Swift 3.0.1](https://swift.org/download/#releases)        | 👍🏻  | 👍  |
 | macOS | 3.0.0    | master   | builtin  | Xcode 8                                                    | 👍🏻  | 👍  |
 | tuxOS | 3.0.0    | -        | builtin  |                                                            | 👎🏻  | 👎  |
 | macOS | 2.3      | swift23  | builtin  | [Xcode 8](https://developer.apple.com/xcode/download/)     | 👍🏻  | 👎  |

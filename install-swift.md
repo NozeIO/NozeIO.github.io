@@ -13,7 +13,7 @@ If you have a Mac, the easiest is plain [Xcode 8](#xcode) with Swift 3.0.
 
 Due to a [bug](/swift3-note/) in the Linux Swift 3.0.0 release you
 need to use 
-[Swift 3.0.1 GMc](https://swift.org/download/#swift-301-gm-candidate)
+[Swift 3.0.1](https://swift.org/download/#releases)
 or later on Linux.
 
 ## Xcode
@@ -48,17 +48,17 @@ Swiftenv [installation steps](https://github.com/kylef/swiftenv#installation):
        systemtap-sdt-dev \
        libbsd-dev libbsd0 libbsd0-dbg
 
-### Ubuntu 14.04 with Swift 3.0.1 GMc
+### Ubuntu 14.04 with Swift 3.0.1
 
-    swiftenv install https://swift.org/builds/swift-3.0.1-GM-CANDIDATE/ubuntu1404/swift-3.0.1-GM-CANDIDATE/swift-3.0.1-GM-CANDIDATE-ubuntu14.04.tar.gz
+    swiftenv install https://swift.org/builds/swift-3.0.1-release/ubuntu1404/swift-3.0.1-RELEASE/swift-3.0.1-RELEASE-ubuntu14.04.tar.gz
 
-### Ubuntu 15.10 with Swift 3.0.1 GMc
+### Ubuntu 15.10 with Swift 3.0.1
 
-    swiftenv install https://swift.org/builds/swift-3.0.1-GM-CANDIDATE/ubuntu1510/swift-3.0.1-GM-CANDIDATE/swift-3.0.1-GM-CANDIDATE-ubuntu15.10.tar.gz
+    swiftenv install https://swift.org/builds/swift-3.0.1-release/ubuntu1510/swift-3.0.1-RELEASE/swift-3.0.1-RELEASE-ubuntu15.10.tar.gz
 
-### Ubuntu 16.04 with Swift 3.0.1 GMc
+### Ubuntu 16.04 with Swift 3.0.1
 
-    swiftenv install https://swift.org/builds/swift-3.0.1-GM-CANDIDATE/ubuntu1604/swift-3.0.1-GM-CANDIDATE/swift-3.0.1-GM-CANDIDATE-ubuntu16.04.tar.gz
+    swiftenv install https://swift.org/builds/swift-3.0.1-release/ubuntu1604/swift-3.0.1-RELEASE/swift-3.0.1-RELEASE-ubuntu16.04.tar.gz
 
 ### macOS with Swift 3.0
 
