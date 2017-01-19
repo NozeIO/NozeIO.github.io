@@ -118,7 +118,7 @@ It just very likely won't be relevant to Noze.io.
 ### Outlook: Swift 4 or 5
 
 What about upcoming Swift versions?
-The big goal for Swift 4 seems to be API compatibility,
+The big goal for Swift 4 seems to be ABI compatibility,
 which is important but less relevant on the server.
 
 There are three things of interest with regards to a future Swift version:
