@@ -63,7 +63,9 @@ offloaded to another thread. Of course you then have to deal with concurrency.
 
 Sample:
 
-    let workerQ = DispatchQueue(label: "bg", qos: .background)
+    let workerQ = DispatchQueue(label      : "de.zeezide", 
+                                qos        : .background,
+                                attributes : .concurrent)
     
     socket | through2 { chunk, _, end in
       workerQ.async {
