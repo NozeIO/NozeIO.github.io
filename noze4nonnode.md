@@ -63,12 +63,12 @@ offloaded to another thread. Of course you then have to deal with concurrency.
 
 Sample:
 
-    let workerQ = dispatch_get_global_queue(QOS_CLASS_BACKGROUND, 0)
+    let workerQ = DispatchQueue(label: "bg", qos: .background)
     
     socket | through2 { chunk, _, end in
-      dispatch_async(workerQ) {
+      workerQ.async {
         // do something expensive with the chunk
-        dispatch_async(core.Q) { end(nil, chunk) } // main Q
+        core.Q.async { end(nil, chunk) } // main Q
       }
     } | socket
 
