@@ -30,6 +30,8 @@ an email to tell us why this is crap (or not?).
 
 | OS    | Swift    | Branch   | GCD      | Xcode / Swift                                              | Make | SPM  |
 | ----- | -------- | ---------| -------- | ---------------------------------------------------------- | ---- | ---- |
+| macOS | 3.2/4.0  | master   | builtin  | [Xcode 9](https://developer.apple.com/xcode/download/)     | 👍🏻  | 👍  |
+| tuxOS | 3.2/4.0  | master   | builtin  |                                                            | 👍🏻  | 👍  |
 | macOS | 3.0.1    | master   | builtin  | [Xcode 8](https://developer.apple.com/xcode/download/)     | 👍🏻  | 👍  |
 | tuxOS | 3.0.1    | master   | builtin  | [Swift 3.0.1](https://swift.org/download/#releases)        | 👍🏻  | 👍  |
 | macOS | 3.0.0    | master   | builtin  | Xcode 8                                                    | 👍🏻  | 👍  |
