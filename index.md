@@ -67,7 +67,7 @@ import http
 
 http.createServer { req, res in 
   res.writeHead(200, [ "Content-Type": "text/html" ])
-  res.end("&lt;h1&gt;Hello World&lt;/h1&gt;")
+  res.end("<h1>Hello World</h1>")
 }
 .listen(1337)
 ```
