@@ -27,6 +27,8 @@ deal with batches of Unicode lines or database records or HTML
 responses or - you get the idea.
 Be efficient: Stream everything and ßatch.
 
+**Note**: Consider this deprecated. Noze.io works on top of GCD and is overall really inefficient and slow for various reasons. [Macro.swift](https://github.com/Macro-swift) is an effort the eventually rewrite it on top of SwiftNIO.
+
 A focus is to keep the API similar to Node. Not always possible -
 Swift is not JavaScript - but pretty close.
 It comes with rechargeables included, <b>Noze.io</b> is self-contained and
